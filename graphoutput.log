@@ -1,0 +1,17 @@
+nohup: ignoring input
+/export/home/rensongcheng.2001/RAG/.venv/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+加载数据集: ./datasets/processed/aa_lcr.json
+✓ 成功加载 100 条数据
+
+正在加载向量数据库和实体树...
+Traceback (most recent call last):
+  File "/export/home/rensongcheng.2001/RAG/benchmark/run_benchmark.py", line 368, in <module>
+    main()
+  File "/export/home/rensongcheng.2001/RAG/benchmark/run_benchmark.py", line 336, in main
+    runner = BenchmarkRunner(
+  File "/export/home/rensongcheng.2001/RAG/benchmark/run_benchmark.py", line 57, in __init__
+    self.vec_db = load_vec_db(vec_db_key, data_source)
+  File "/export/home/rensongcheng.2001/RAG/rag_base/build_index.py", line 226, in load_vec_db
+    db = RagVecDB(index_path)
+RuntimeError: Failed to acquire lock for VecDBManager

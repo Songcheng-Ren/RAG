@@ -9,13 +9,16 @@ import os
 
 
 def get_dump_file_path1(tree_num_max, entities_file_name, node_num_max):
-    return f"./entity_forest_cache/forest_nlp_entities_file_{entities_file_name}_tree_num_{tree_num_max}_node_num_{node_num_max}_bf1.pkl"
+    safe_name = os.path.basename(entities_file_name)
+    return f"./entity_forest_cache/forest_nlp_entities_file_{safe_name}_tree_num_{tree_num_max}_node_num_{node_num_max}_bf1.pkl"
 
 def get_dump_file_path2(tree_num_max, entities_file_name, node_num_max):
-    return f"./entity_forest_cache/forest_nlp_entities_file_{entities_file_name}_tree_num_{tree_num_max}_node_num_{node_num_max}_bf2.pkl"
+    safe_name = os.path.basename(entities_file_name)
+    return f"./entity_forest_cache/forest_nlp_entities_file_{safe_name}_tree_num_{tree_num_max}_node_num_{node_num_max}_bf2.pkl"
 
 def get_dump_file_path3(tree_num_max, entities_file_name, node_num_max):
-    return f"./entity_forest_cache/forest_nlp_entities_file_{entities_file_name}_tree_num_{tree_num_max}_node_num_{node_num_max}_bf_cpp.pkl"
+    safe_name = os.path.basename(entities_file_name)
+    return f"./entity_forest_cache/forest_nlp_entities_file_{safe_name}_tree_num_{tree_num_max}_node_num_{node_num_max}_bf_cpp.pkl"
     
 
 def build_forest(tree_num_max=30, entities_file_name="entities_file", search_method=1, node_num_max=1000):
@@ -99,6 +102,7 @@ def build_forest(tree_num_max=30, entities_file_name="entities_file", search_met
     print(f"node num: {count_num}")
     
     if search_method != 6:
+        os.makedirs(os.path.dirname(dump_file_path) or '.', exist_ok=True)
         with open(dump_file_path, 'wb') as f:
             pickle.dump((forest, nlp), f)
 

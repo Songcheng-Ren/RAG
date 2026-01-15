@@ -1,0 +1,24 @@
+{
+  "methods": [
+    {
+      "file": "./benchmark/results/tjw_aalcr_baseline_100.json",
+      "name": "Baseline"
+    },
+    {
+      "file": "./benchmark/results/tjw_aalcr_depth1_100.json",
+      "name": "Depth=1"
+    },
+    {
+      "file": "./benchmark/results/tjw_aalcr_depth2_100.json",
+      "name": "Depth=2"
+    },
+    {
+      "file": "./benchmark/results/tjw_aalcr_depth3_100.json",
+      "name": "Depth=3"
+    },
+    {
+      "file": "./benchmark/results/tree_aalcr_100.json",
+      "name": "tree-aalcr"
+    }
+  ]
+}

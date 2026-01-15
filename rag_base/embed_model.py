@@ -12,6 +12,6 @@ def get_embed_model():
     if embed_model_name in embed_model_cache:
         return embed_model_cache[embed_model_name]
 
-    embed_model = SentenceTransformer(embed_model_name)
+    embed_model = SentenceTransformer(embed_model_name, device="cuda:0")
     embed_model_cache[embed_model_name] = embed_model
     return embed_model

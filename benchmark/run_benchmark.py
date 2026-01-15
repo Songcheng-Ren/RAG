@@ -39,7 +39,7 @@ class BenchmarkRunner:
         # 加载向量数据库
         # 根据vec_db_key确定数据源路径
         if vec_db_key == "medqa":
-            data_source = "/Users/zongyikun/Downloads/Med_data_clean/textbooks/en"
+            data_source = "./datasets/medqa_chunks.txt"
         elif vec_db_key == "dart":
             data_source = "/Users/zongyikun/Downloads/dart-v1.1.1-full-dev.json"
         elif vec_db_key == "aeslc":
@@ -48,6 +48,8 @@ class BenchmarkRunner:
         elif vec_db_key == "triviaqa":
             # TriviaQA数据集路径（使用answer字段作为chunks）
             data_source = "./datasets/processed/triviaqa.json"
+        elif vec_db_key == "aalcr":
+            data_source = "./datasets/aalcr_chunks_objects.json"
         else:
             # 默认尝试从vec_db_cache加载已存在的数据库
             data_source = "vec_db_cache/"
@@ -131,7 +133,7 @@ class BenchmarkRunner:
         # 获取检索时间和生成时间
         retrieval_time = get_retrieval_time()
         generation_time = get_generation_time()
-        
+        print(retrieval_time, generation_time)
         result = {
             "question": question,
             "answer": answer,

@@ -10,7 +10,7 @@ entity_number = 0
 
 
 def enhance_spacy(entities):
-    nlp = spacy.load("zh_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
     ruler = nlp.add_pipe("entity_ruler", before="ner")
 

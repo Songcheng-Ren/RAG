@@ -207,6 +207,10 @@ def filter_contexts_by_dual_threshold(
 
 retrieval_time = None
 generation_time = None
+def get_retrieval_time():
+    return retrieval_time
+def get_generation_time():
+    return generation_time
 
 def augment_prompt(query: str, db: RagVecDB | RagMultiVecDB, forest: list[EntityTree]=None, nlp=None, search_method=1, k=3, model_name="gpt-3.5-turbo", debug=False):
     global retrieval_time

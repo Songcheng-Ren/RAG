@@ -1,0 +1,938 @@
+nohup: ignoring input
+/export/home/rensongcheng.2001/RAG/.venv/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+加载数据集: ./datasets/processed/aa_lcr.json
+✓ 成功加载 100 条数据
+
+正在加载向量数据库和实体树...
+✓ Vector DB加载完成 (0.00秒)
+Loading cached forest and nlp from ./entity_forest_cache/forest_nlp_entities_file_aalcr_entities_relations_filtered_tree_num_50_node_num_2000000_bf1.pkl...
+✓ Forest和NLP加载完成 (0.41秒)
+✓ 初始化完成 (0.41秒)
+
+
+开始测试 100 个问题...
+================================================================================
+
+[1/100] Based on the provided documents, there appears to be a corre...
+query entity number: 51
+query entity number: 102
+
+[1;31mTime Ratio: 1.141982%[0m
+1.165938377380371 100.93186807632446
+  回答长度: 66 字符
+  耗时: 100.94秒
+
+[2/100] Based on the provided documents, what are the 3 legal cases ...
+query entity number: 102
+query entity number: 102
+
+[1;31mTime Ratio: 5.561664%[0m
+1.0801887512207031 18.34185481071472
+  回答长度: 942 字符
+  耗时: 18.35秒
+
+[3/100] The purpose of a business is often to grow and generate prod...
+query entity number: 357
+query entity number: 612
+
+[1;31mTime Ratio: 28.476183%[0m
+28.920644283294678 72.64017248153687
+  回答长度: 22 字符
+  耗时: 72.65秒
+
+[4/100] Throughout all the documents, there are two main LLM threats...
+query entity number: 816
+query entity number: 1020
+
+[1;31mTime Ratio: 21.972888%[0m
+28.887380123138428 102.58091020584106
+  回答长度: 237 字符
+  耗时: 102.60秒
+
+[5/100] I am suspicious about whether the output I have just receive...
+query entity number: 1122
+query entity number: 1224
+
+[1;31mTime Ratio: 11.934918%[0m
+1.015631914138794 7.494120359420776
+  回答长度: 84 字符
+  耗时: 7.50秒
+
+[6/100] What is the difference in total stockholders' equity for the...
+query entity number: 1581
+query entity number: 1938
+
+[1;31mTime Ratio: 24.262020%[0m
+28.768017053604126 89.80420756340027
+  回答长度: 202 字符
+  耗时: 89.81秒
+
+[7/100] One company in the documents conducted a press release on Ju...
+query entity number: 2193
+query entity number: 2448
+
+[1;31mTime Ratio: 26.280255%[0m
+29.174174308776855 81.83758997917175
+  回答长度: 80 字符
+  耗时: 81.85秒
+
+[8/100] For the metric Equinix would report as net income excluding ...
+query entity number: 3162
+query entity number: 3876
+
+[1;31mTime Ratio: 29.332553%[0m
+29.36810064315796 70.75308847427368
+  回答长度: 706 字符
+  耗时: 70.76秒
+
+[9/100] How much more profit did the more profitable company make in...
+query entity number: 4080
+query entity number: 4284
+
+[1;31mTime Ratio: 31.773209%[0m
+28.477007150650024 61.14883852005005
+  回答长度: 66 字符
+  耗时: 61.16秒
+
+[10/100] For the company and quarter where net income per diluted sha...
+query entity number: 4641
+query entity number: 4998
+
+[1;31mTime Ratio: 24.331060%[0m
+28.665788888931274 89.14983224868774
+  回答长度: 164 字符
+  耗时: 89.16秒
+  💾 Checkpoint已保存 (10/100)
+
+[11/100] For the company and quarter quarter where net income per dil...
+query entity number: 5457
+query entity number: 5916
+
+[1;31mTime Ratio: 27.267068%[0m
+28.82309126853943 76.88351321220398
+  回答长度: 1204 字符
+  耗时: 76.89秒
+
+[12/100] For the company and quarter where rental revenues were $886....
+query entity number: 6273
+query entity number: 6630
+
+[1;31mTime Ratio: 26.014431%[0m
+29.014692068099976 82.51837396621704
+  回答长度: 143 字符
+  耗时: 82.53秒
+
+[13/100] For the company and quarter where total operating revenues w...
+query entity number: 6834
+query entity number: 7038
+
+[1;31mTime Ratio: 25.126051%[0m
+28.42095398902893 84.69253754615784
+  回答长度: 388 字符
+  耗时: 84.70秒
+
+[14/100] Focus on the company that discloses a foreign currency hedgi...
+query entity number: 7293
+query entity number: 7548
+
+[1;31mTime Ratio: 23.416267%[0m
+28.83419442176819 94.30325818061829
+  回答长度: 1336 字符
+  耗时: 94.31秒
+
+[15/100] For the company that reported on the metric, what was operat...
+query entity number: 7650
+query entity number: 7752
+
+[1;31mTime Ratio: 26.125581%[0m
+28.328429222106934 80.10333824157715
+  回答长度: 13 字符
+  耗时: 80.11秒
+
+[16/100] A manager has asked an analyst on their team to track Digita...
+query entity number: 8517
+query entity number: 9282
+
+[1;31mTime Ratio: 30.862361%[0m
+29.973843097686768 67.14718770980835
+  回答长度: 2 字符
+  耗时: 67.16秒
+
+[17/100] In which quarter was the largest growth in rental revenue fo...
+query entity number: 9588
+query entity number: 9894
+
+[1;31mTime Ratio: 24.018987%[0m
+28.66557240486145 90.67989754676819
+  回答长度: 11 字符
+  耗时: 90.69秒
+
+[18/100] For the cities we can be confident NEXTDC added additional b...
+query entity number: 10455
+query entity number: 11016
+
+[1;31mTime Ratio: 28.749934%[0m
+29.026625633239746 71.93578147888184
+  回答长度: 259 字符
+  耗时: 71.95秒
+
+[19/100] For Equinix, has the guidance on xScale capital expenditure ...
+query entity number: 11373
+query entity number: 11730
+
+[1;31mTime Ratio: 24.881245%[0m
+28.94643759727478 87.39194321632385
+  回答长度: 5 字符
+  耗时: 87.40秒
+
+[20/100] Consider the operating margins across quarters for both Equi...
+query entity number: 11934
+query entity number: 12138
+
+[1;31mTime Ratio: 23.562857%[0m
+29.09079670906067 94.36960029602051
+  回答长度: 802 字符
+  耗时: 94.38秒
+  💾 Checkpoint已保存 (20/100)
+
+[21/100] What was Equinix’s operating margin to the nearest percent i...
+query entity number: 12240
+query entity number: 12342
+
+[1;31mTime Ratio: 8.330577%[0m
+0.45116114616394043 4.964564085006714
+  回答长度: 3 字符
+  耗时: 4.97秒
+
+[22/100] For Equinix, Calculate the ratio of their adjusted EBITDA to...
+query entity number: 12699
+query entity number: 13056
+
+[1;31mTime Ratio: 27.156608%[0m
+29.269742250442505 78.51154637336731
+  回答长度: 46 字符
+  耗时: 78.52秒
+
+[23/100] For the company and quarter where the company reported a 13....
+query entity number: 13413
+query entity number: 13770
+
+[1;31mTime Ratio: 27.643187%[0m
+28.560024976730347 74.75666308403015
+  回答长度: 20 字符
+  耗时: 74.76秒
+
+[24/100] For the company and quarter where the company reported a 13....
+query entity number: 14688
+query entity number: 15606
+
+[1;31mTime Ratio: 28.417941%[0m
+29.344733238220215 73.91655850410461
+  回答长度: 11 字符
+  耗时: 73.92秒
+
+[25/100] For Equinix, did any of the FY2023 guidance stay the same be...
+query entity number: 15810
+query entity number: 16014
+
+[1;31mTime Ratio: 2.637061%[0m
+0.5101015567779541 18.833463430404663
+  回答长度: 60 字符
+  耗时: 18.84秒
+
+[26/100] Consider the company and quarter that best matches the follo...
+query entity number: 16626
+query entity number: 17238
+
+[1;31mTime Ratio: 26.405644%[0m
+29.044522523880005 80.94909143447876
+  回答长度: 3 字符
+  耗时: 80.96秒
+
+[27/100] Consider investments made over the trailing 12 months ending...
+query entity number: 17391
+query entity number: 17544
+
+[1;31mTime Ratio: 29.117715%[0m
+25.454046487808228 61.96368598937988
+  回答长度: 132 字符
+  耗时: 61.97秒
+
+[28/100] Consider investments and sales made over the trailing 12 mon...
+query entity number: 17748
+query entity number: 17952
+
+[1;31mTime Ratio: 27.094531%[0m
+25.75999665260315 69.31452703475952
+  回答长度: 55 字符
+  耗时: 69.33秒
+
+[29/100] Consider investments and sales made over the trailing 12 mon...
+query entity number: 18207
+query entity number: 18462
+
+[1;31mTime Ratio: 20.065722%[0m
+19.785452842712402 78.81778979301453
+  回答长度: 872 字符
+  耗时: 78.83秒
+
+[30/100] An analyst has been tasked with monitoring Digital Realty. T...
+query entity number: 18972
+query entity number: 19482
+
+[1;31mTime Ratio: 29.882862%[0m
+29.72564458847046 69.7482430934906
+  回答长度: 204 字符
+  耗时: 69.76秒
+  💾 Checkpoint已保存 (30/100)
+
+[31/100] Between the quarters that had a 1.2% decrease in Core Funds ...
+query entity number: 19584
+query entity number: 19686
+
+[1;31mTime Ratio: 1.412332%[0m
+0.9164016246795654 63.969326972961426
+  回答长度: 147 字符
+  耗时: 63.98秒
+
+[32/100] In the quarters where the weighted average remaining lease t...
+query entity number: 19788
+query entity number: 19890
+
+[1;31mTime Ratio: 6.820541%[0m
+0.8805139064788818 12.02922248840332
+  回答长度: 721 字符
+  耗时: 12.04秒
+
+[33/100] In 2023, which currency remained a consistent percentage in ...
+query entity number: 19992
+query entity number: 20094
+
+[1;31mTime Ratio: 30.276795%[0m
+28.389880657196045 65.37790775299072
+  回答长度: 103 字符
+  耗时: 65.39秒
+
+[34/100] In 2023, which currency had the most unique values in the cu...
+query entity number: 20196
+query entity number: 20298
+
+[1;31mTime Ratio: 25.672096%[0m
+28.385366678237915 82.18358254432678
+  回答长度: 38 字符
+  耗时: 82.20秒
+
+[35/100] Across Q1, Q2, Q3, Q4 (of 2023), and Q1 (2024); which quarte...
+query entity number: 20706
+query entity number: 21114
+
+[1;31mTime Ratio: 26.090216%[0m
+28.706881284713745 81.32241773605347
+  回答长度: 299 字符
+  耗时: 81.33秒
+
+[36/100] Estimate NEXTDC's customer count for FY24, assuming it incre...
+query entity number: 21267
+query entity number: 21420
+
+[1;31mTime Ratio: 23.888716%[0m
+28.707317113876343 91.46371841430664
+  回答长度: 1215 字符
+  耗时: 91.47秒
+
+[37/100] Based on the provided documents, rank the Non-Executive Dire...
+query entity number: 21573
+query entity number: 21726
+
+[1;31mTime Ratio: 7.498686%[0m
+0.5862975120544434 7.232372999191284
+  回答长度: 36 字符
+  耗时: 7.24秒
+
+[38/100] Based on the provided documents, determine and rank the half...
+query entity number: 22032
+query entity number: 22338
+
+[1;31mTime Ratio: 19.913542%[0m
+28.79471230506897 115.80393505096436
+  回答长度: 334 字符
+  耗时: 115.81秒
+
+[39/100] Based on the provided documents, which cities are expected t...
+query entity number: 22389
+query entity number: 22440
+
+[1;31mTime Ratio: 2.367238%[0m
+0.6851212978363037 28.256673336029053
+  回答长度: 53 字符
+  耗时: 28.27秒
+
+[40/100] Based on the provided documents, what is the latest proposed...
+query entity number: 22746
+query entity number: 23052
+
+[1;31mTime Ratio: 28.170237%[0m
+28.602550268173218 72.93209624290466
+  回答长度: 9 字符
+  耗时: 72.94秒
+  💾 Checkpoint已保存 (40/100)
+
+[41/100] In which fiscal quarter of 2024 did Atlassian record its sec...
+query entity number: 23256
+query entity number: 23460
+
+[1;31mTime Ratio: 29.089267%[0m
+28.314594984054565 69.02231812477112
+  回答长度: 30 字符
+  耗时: 69.03秒
+
+[42/100] When comparing Atlassian's 2024 GAAP operating margin with 2...
+query entity number: 23715
+query entity number: 23970
+
+[1;31mTime Ratio: 18.269148%[0m
+28.68072772026062 128.3092315196991
+  回答长度: 510 字符
+  耗时: 128.32秒
+
+[43/100] List the analysts that only attended one of the Asana earnin...
+query entity number: 24021
+query entity number: 24072
+
+[1;31mTime Ratio: 25.289544%[0m
+28.51411485671997 84.23649191856384
+  回答长度: 29 字符
+  耗时: 84.25秒
+
+[44/100] Between the two Smartsheet earning calls, how many analysts ...
+query entity number: 24174
+query entity number: 24276
+
+[1;31mTime Ratio: 27.779207%[0m
+28.45165491104126 73.96903324127197
+  回答长度: 108 字符
+  耗时: 73.98秒
+
+[45/100] Which earning call was Brent Thill from Jefferies not presen...
+query entity number: 24429
+query entity number: 24582
+
+[1;31mTime Ratio: 31.127122%[0m
+28.23532271385193 62.474390506744385
+  回答长度: 5 字符
+  耗时: 62.48秒
+
+[46/100] Which of the following is not a key similarity between the o...
+query entity number: 24888
+query entity number: 25194
+
+[1;31mTime Ratio: 30.943189%[0m
+29.330129623413086 65.4569001197815
+  回答长度: 81 字符
+  耗时: 65.46秒
+
+[47/100] In the Asana earnings calls, which firms have analysts prese...
+query entity number: 25245
+query entity number: 25296
+
+[1;31mTime Ratio: 22.781644%[0m
+22.28060483932495 75.52008366584778
+  回答长度: 29 字符
+  耗时: 75.53秒
+
+[48/100] Out of the analysts who were present in both Smartsheet earn...
+query entity number: 25347
+query entity number: 25398
+
+[1;31mTime Ratio: 27.677165%[0m
+28.943161010742188 75.63099074363708
+  回答长度: 668 字符
+  耗时: 75.64秒
+
+[49/100] In the Smartsheet earnings calls, which firms that the analy...
+query entity number: 25449
+query entity number: 25500
+
+[1;31mTime Ratio: 21.207935%[0m
+25.354888916015625 94.19889521598816
+  回答长度: 769 字符
+  耗时: 94.21秒
+
+[50/100] Which analyst(s) participated in all earnings call for Asana...
+query entity number: 25602
+query entity number: 25704
+
+[1;31mTime Ratio: 18.307932%[0m
+19.580382347106934 87.36988377571106
+  回答长度: 43 字符
+  耗时: 87.38秒
+  💾 Checkpoint已保存 (50/100)
+
+[51/100] How many of the same analysts participated in all the 2023 e...
+query entity number: 25857
+query entity number: 26010
+
+[1;31mTime Ratio: 29.623381%[0m
+28.48593831062317 67.67438125610352
+  回答长度: 161 字符
+  耗时: 67.68秒
+
+[52/100] How many of the same analysts participated in all the 2023 e...
+query entity number: 26163
+query entity number: 26316
+
+[1;31mTime Ratio: 25.115818%[0m
+22.559479236602783 67.2623176574707
+  回答长度: 110 字符
+  耗时: 67.30秒
+
+[53/100] Which company's earnings calls did not specify the value of ...
+query entity number: 26469
+query entity number: 26622
+
+[1;31mTime Ratio: 20.153929%[0m
+19.628089666366577 77.76279664039612
+  回答长度: 15 字符
+  耗时: 77.77秒
+
+[54/100] Which member in an earnings call is most likely to be the fi...
+query entity number: 26673
+query entity number: 26724
+
+[1;31mTime Ratio: 28.045609%[0m
+25.625296115875244 65.74478530883789
+  回答长度: 33 字符
+  耗时: 65.75秒
+
+[55/100] Based on the provided documents, rank the companies accordin...
+query entity number: 26979
+query entity number: 27234
+
+[1;31mTime Ratio: 28.827168%[0m
+16.422119855880737 40.545390605926514
+  回答长度: 115 字符
+  耗时: 40.56秒
+
+[56/100] There are a number of named customers that Smartsheet acquir...
+query entity number: 27438
+query entity number: 27642
+
+[1;31mTime Ratio: 29.780237%[0m
+28.457613945007324 67.10110926628113
+  回答长度: 423 字符
+  耗时: 67.11秒
+
+[57/100] Based on the provided documents, list the companies that exp...
+query entity number: 27744
+query entity number: 27846
+
+[1;31mTime Ratio: 5.418666%[0m
+0.6926250457763672 12.089580059051514
+  回答长度: 5 字符
+  耗时: 12.10秒
+
+[58/100] Based on the provided document, rank Asana's quarters by the...
+query entity number: 27948
+query entity number: 28050
+
+[1;31mTime Ratio: 21.901597%[0m
+28.65952491760254 102.19634127616882
+  回答长度: 135 字符
+  耗时: 102.20秒
+
+[59/100] Based solely on the provided documents and no other source o...
+query entity number: 28254
+query entity number: 28458
+
+[1;31mTime Ratio: 27.262569%[0m
+28.930464506149292 77.1874327659607
+  回答长度: 371 字符
+  耗时: 77.20秒
+
+[60/100] According to the documents, how much did Asana improve its n...
+query entity number: 28560
+query entity number: 28662
+
+[1;31mTime Ratio: 26.099277%[0m
+28.820805072784424 81.60679268836975
+  回答长度: 229 字符
+  耗时: 81.61秒
+  💾 Checkpoint已保存 (60/100)
+
+[61/100] Which quarter had the greatest year-over-year increase in cu...
+query entity number: 28866
+query entity number: 29070
+
+[1;31mTime Ratio: 25.587672%[0m
+28.666747570037842 83.36668515205383
+  回答长度: 19 字符
+  耗时: 83.38秒
+
+[62/100] In the transcript for the quarter that had a revenue of $150...
+query entity number: 29172
+query entity number: 29274
+
+[1;31mTime Ratio: 1.998494%[0m
+0.6193218231201172 30.370108604431152
+  回答长度: 87 字符
+  耗时: 30.38秒
+
+[63/100] In the quarter where Atlassian recorded it's largest Cloud r...
+query entity number: 29733
+query entity number: 30192
+
+[1;31mTime Ratio: 30.281560%[0m
+22.531121253967285 51.874295711517334
+  回答长度: 3 字符
+  耗时: 51.88秒
+
+[64/100] Which quarter did Atlassian have an almost 50% increase in c...
+query entity number: 30345
+query entity number: 30498
+
+[1;31mTime Ratio: 30.522937%[0m
+22.277156591415405 50.70781326293945
+  回答长度: 145 字符
+  耗时: 50.72秒
+
+[65/100] In Q2 2024, Smartsheet’s dollar-based net retention rate saw...
+query entity number: 30855
+query entity number: 31212
+
+[1;31mTime Ratio: 31.518929%[0m
+19.517706871032715 42.40605568885803
+  回答长度: 139 字符
+  耗时: 42.41秒
+
+[66/100] Across Q1, Q2, and Q3 of fiscal year 2024, which quarter had...
+query entity number: 31569
+query entity number: 31926
+
+[1;31mTime Ratio: 18.723358%[0m
+16.38839077949524 71.14073204994202
+  回答长度: 1583 字符
+  耗时: 71.15秒
+
+[67/100] What was the percentage growth in GAAP net loss between Q1 a...
+query entity number: 32232
+query entity number: 32538
+
+[1;31mTime Ratio: 5.459468%[0m
+0.8516898155212402 14.74854564666748
+  回答长度: 85 字符
+  耗时: 14.76秒
+
+[68/100] Rank quarters 1-3 based on the difference between their 2024...
+query entity number: 32742
+query entity number: 32946
+
+[1;31mTime Ratio: 25.794871%[0m
+28.517196893692017 82.03655290603638
+  回答长度: 11 字符
+  耗时: 82.04秒
+
+[69/100] I am looking to read the submissions made by Buy Now, Pay La...
+query entity number: 33048
+query entity number: 33150
+
+[1;31mTime Ratio: 5.152042%[0m
+0.790280818939209 14.548895835876465
+  回答长度: 397 字符
+  耗时: 14.56秒
+
+[70/100] In FinTech Australia's submission, which organisation has co...
+query entity number: 33303
+query entity number: 33456
+
+[1;31mTime Ratio: 24.862580%[0m
+28.48374319076538 86.08096694946289
+  回答长度: 28 字符
+  耗时: 86.09秒
+  💾 Checkpoint已保存 (70/100)
+
+[71/100] Based on the information in the documents, which organisatio...
+query entity number: 33558
+query entity number: 33660
+
+[1;31mTime Ratio: 29.312006%[0m
+28.499674558639526 68.72899842262268
+  回答长度: 6 字符
+  耗时: 68.74秒
+
+[72/100] Which submissions in the document set explicitly mention sec...
+query entity number: 33762
+query entity number: 33864
+
+[1;31mTime Ratio: 26.786631%[0m
+25.610316276550293 69.99825835227966
+  回答长度: 77 字符
+  耗时: 70.01秒
+
+[73/100] Sameer and David are colleagues. They have reviewed the docu...
+query entity number: 34017
+query entity number: 34170
+
+[1;31mTime Ratio: 8.323792%[0m
+0.9445374011993408 10.402904272079468
+  回答长度: 310 字符
+  耗时: 10.41秒
+
+[74/100] List all financial institutions that provide loans/advances ...
+query entity number: 34170
+query entity number: 34170
+
+[1;31mTime Ratio: 5.791394%[0m
+0.5226686000823975 8.502249956130981
+  回答长度: 77 字符
+  耗时: 8.51秒
+
+[75/100] According to sources cited by the Australian treasury, what ...
+query entity number: 34374
+query entity number: 34578
+
+[1;31mTime Ratio: 19.971458%[0m
+28.762763500213623 115.25658750534058
+  回答长度: 1066 字符
+  耗时: 115.26秒
+
+[76/100] Based on the provided documents, what is the estimated total...
+query entity number: 34629
+query entity number: 34680
+
+[1;31mTime Ratio: 29.727829%[0m
+28.39689826965332 67.12604975700378
+  回答长度: 339 字符
+  耗时: 67.14秒
+
+[77/100] Consider a sample of 560 medium-sized Australian business ea...
+query entity number: 34731
+query entity number: 34782
+
+[1;31mTime Ratio: 26.767042%[0m
+28.772876739501953 78.72079682350159
+  回答长度: 247 字符
+  耗时: 78.73秒
+
+[78/100] Based on the provided documents, list out the organizations ...
+query entity number: 34833
+query entity number: 34884
+
+[1;31mTime Ratio: 4.255537%[0m
+1.3087384700775146 29.445043563842773
+  回答长度: 5 字符
+  耗时: 29.45秒
+
+[79/100] Based on the provided documents, how many judgments related ...
+query entity number: 34935
+query entity number: 34986
+
+[1;31mTime Ratio: 25.585856%[0m
+28.588024854660034 83.14568138122559
+  回答长度: 129 字符
+  耗时: 83.15秒
+
+[80/100] The NSW government uses AI to identify wanted criminals, and...
+query entity number: 35190
+query entity number: 35394
+
+[1;31mTime Ratio: 23.870484%[0m
+28.736435413360596 91.64836955070496
+  回答长度: 109 字符
+  耗时: 91.66秒
+  💾 Checkpoint已保存 (80/100)
+
+[81/100] An Austrian startup that has developed a high-risk AI system...
+query entity number: 35649
+query entity number: 35904
+
+[1;31mTime Ratio: 25.103914%[0m
+29.044480323791504 86.6525387763977
+  回答长度: 64 字符
+  耗时: 86.66秒
+
+[82/100] Between the hearings of June 18th and July 2nd 2024, which a...
+query entity number: 36006
+query entity number: 36108
+
+[1;31mTime Ratio: 29.099187%[0m
+28.524779558181763 69.50125694274902
+  回答长度: 69 字符
+  耗时: 69.51秒
+
+[83/100] Following the Senate Bill on February 7th 2024, how many tim...
+query entity number: 36210
+query entity number: 36312
+
+[1;31mTime Ratio: 26.148868%[0m
+28.41648578643799 80.25546717643738
+  回答长度: 210 字符
+  耗时: 80.26秒
+
+[84/100] A proposed amendment to the Bill to define "positive safety ...
+query entity number: 36363
+query entity number: 36414
+
+[1;31mTime Ratio: 6.375355%[0m
+0.6917364597320557 10.158427715301514
+  回答长度: 170 字符
+  耗时: 10.17秒
+
+[85/100] It should be the developer, not the user, who should be liab...
+query entity number: 36516
+query entity number: 36618
+
+[1;31mTime Ratio: 26.727938%[0m
+28.86305809020996 79.12528657913208
+  回答长度: 91 字符
+  耗时: 79.13秒
+
+[86/100] What proportion of the global discussion on AI comes from th...
+query entity number: 36669
+query entity number: 36720
+
+[1;31mTime Ratio: 22.541802%[0m
+28.50463843345642 97.94771075248718
+  回答长度: 218 字符
+  耗时: 97.96秒
+
+[87/100] In Australia, how much larger is the percentage of businesse...
+query entity number: 36924
+query entity number: 37128
+
+[1;31mTime Ratio: 30.395724%[0m
+28.536954641342163 65.34781193733215
+  回答长度: 66 字符
+  耗时: 65.36秒
+
+[88/100] How many Australian AI companies existed before 2013? Use th...
+query entity number: 37281
+query entity number: 37434
+
+[1;31mTime Ratio: 19.560657%[0m
+25.450460195541382 104.65999722480774
+  回答长度: 215 字符
+  耗时: 104.67秒
+
+[89/100] In 2022, what was the percentage difference in the proportio...
+query entity number: 37536
+query entity number: 37638
+
+[1;31mTime Ratio: 19.537642%[0m
+10.216057300567627 42.073042154312134
+  回答长度: 505 字符
+  耗时: 42.08秒
+
+[90/100] For the technology that accounted for the highest percentage...
+query entity number: 37740
+query entity number: 37842
+
+[1;31mTime Ratio: 19.899628%[0m
+29.003087759017944 116.74379396438599
+  回答长度: 2969 字符
+  耗时: 116.75秒
+  💾 Checkpoint已保存 (90/100)
+
+[91/100] What company's CEO talks about the importance of efficient, ...
+query entity number: 37944
+query entity number: 38046
+
+[1;31mTime Ratio: 24.393299%[0m
+28.345693588256836 87.85709428787231
+  回答长度: 73 字符
+  耗时: 87.87秒
+
+[92/100] One of the retail profiles in the documents mentions a super...
+query entity number: 38199
+query entity number: 38352
+
+[1;31mTime Ratio: 4.155727%[0m
+0.8346598148345947 19.249908208847046
+  回答长度: 14 字符
+  耗时: 19.26秒
+
+[93/100] Based on the provided documents, if I am 77 years old in the...
+query entity number: 38454
+query entity number: 38556
+
+[1;31mTime Ratio: 29.591926%[0m
+28.486515045166016 67.77796983718872
+  回答长度: 186 字符
+  耗时: 67.79秒
+
+[94/100] In 2022, what percentage of American customers were Gen-Z or...
+query entity number: 38658
+query entity number: 38760
+
+[1;31mTime Ratio: 6.641899%[0m
+0.8523008823394775 11.979886531829834
+  回答长度: 3 字符
+  耗时: 11.99秒
+
+[95/100] Two documents estimate the percentage of marketing employees...
+query entity number: 38913
+query entity number: 39066
+
+[1;31mTime Ratio: 20.390856%[0m
+28.658436059951782 111.88709449768066
+  回答长度: 1410 字符
+  耗时: 111.90秒
+
+[96/100] Identify the generative AI technology cited in the document ...
+query entity number: 39270
+query entity number: 39474
+
+[1;31mTime Ratio: 26.202390%[0m
+28.573251008987427 80.475013256073
+  回答长度: 59 字符
+  耗时: 80.48秒
+
+[97/100] Carney and Quill state that 61% of consumers trust endorseme...
+query entity number: 39627
+query entity number: 39780
+
+[1;31mTime Ratio: 5.048222%[0m
+0.7614178657531738 14.321473121643066
+  回答长度: 16 字符
+  耗时: 14.33秒
+
+[98/100] What is the name of the advertising policy related document ...
+query entity number: 39882
+query entity number: 39984
+
+[1;31mTime Ratio: 25.965016%[0m
+29.034425020217896 82.7868983745575
+  回答长度: 156 字符
+  耗时: 82.79秒
+
+[99/100] I'm a independent video game developer looking to monetise m...
+query entity number: 40035
+query entity number: 40086
+
+[1;31mTime Ratio: 4.218723%[0m
+1.1463415622711182 26.026370763778687
+  回答长度: 80 字符
+  耗时: 26.03秒
+
+[100/100] I am researching construction trends. I am looking for docum...
+query entity number: 40290
+query entity number: 40494
+
+[1;31mTime Ratio: 29.061013%[0m
+28.805729389190674 70.31583070755005
+  回答长度: 260 字符
+  耗时: 70.32秒
+  💾 Checkpoint已保存 (100/100)
+
+💾 最终checkpoint已保存: ./benchmark/results/aalcr_baseline_new.json
+
+================================================================================
+测试结果汇总
+================================================================================
+总问题数: 100
+总耗时: 6708.75秒
+平均响应时间: 67.09秒
+平均回答长度: 267 字符
+================================================================================
+
+✓ 结果已保存到: ./benchmark/results/aalcr_baseline_new.json

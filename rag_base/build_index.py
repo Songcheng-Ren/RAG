@@ -230,9 +230,31 @@ def load_vec_db(key: str, dir_or_file: str):
         keys = db.get_all_keys()
         if keys:
             load_vec_db._db_table_map[id(db)] = keys[0]
+            return db
         else:
-            load_vec_db._db_table_map[id(db)] = "default_table"
-        return db
+            # Existing cache directory but no tables; rebuild from source
+            try:
+                import shutil
+                shutil.rmtree(index_path, ignore_errors=True)
+                os.makedirs(index_path, exist_ok=True)
+                chunks = collect_chunks(dir_or_file)
+                db = build_index_on_chunks(chunks, target_dir=index_path)
+                try:
+                    db.force_save()
+                except:
+                    pass
+                # Record table name
+                if hasattr(build_index_on_chunks, '_db_table_map'):
+                    table_name = build_index_on_chunks._db_table_map.get(id(db), "default_table")
+                else:
+                    ks = db.get_all_keys()
+                    table_name = ks[0] if ks else "default_table"
+                load_vec_db._db_table_map[id(db)] = table_name
+                return db
+            except Exception:
+                # Fallback to default behavior; search will try to resolve keys later
+                load_vec_db._db_table_map[id(db)] = "default_table"
+                return db
 
     # Build new database - 直接在目标位置构建，避免移动文件的问题
     chunks = collect_chunks(dir_or_file)

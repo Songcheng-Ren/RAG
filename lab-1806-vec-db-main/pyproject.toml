@@ -16,3 +16,8 @@ features = ["pyo3/extension-module"]
 
 [tool.uv]
 dev-dependencies = ["maturin>=1.7.4"]
+
+[[tool.uv.index]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
